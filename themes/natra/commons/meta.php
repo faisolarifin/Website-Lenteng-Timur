@@ -5,8 +5,8 @@
 <meta name='viewport' content='width=device-width, initial-scale=1' />
 <meta name='google' content='notranslate' />
 <meta name='theme' content='Natra' />
-<meta name='designer' content='Ariandi Ryan Kahfi, S.Pd.' />
-<meta name='theme:designer' content='Ariandi Ryan Kahfi, S.Pd.' />
+<meta name='designer' content='Ach. Faisol S. Arifin' />
+<meta name='theme:designer' content='Ach. Faisol S. Arifin' />
 <meta name='theme:version' content='4.4' />
 <meta name="keywords" content="<?= $this->setting->website_title.' '.ucwords($this->setting->sebutan_desa).' '.$desa['nama_desa'].' '.ucwords($this->setting->sebutan_kecamatan).' '.$desa['nama_kecamatan'].' '.ucwords($this->setting->sebutan_kabupaten).' '.$desa['nama_kabupaten'];?>" />
 <meta property="og:site_name" content="<?= ucwords($this->setting->sebutan_desa).' '.$desa['nama_desa'].' '.ucwords($this->setting->sebutan_kecamatan).' '.$desa['nama_kecamatan'].' '.ucwords($this->setting->sebutan_kabupaten).' '.$desa['nama_kabupaten'];?>"/>
