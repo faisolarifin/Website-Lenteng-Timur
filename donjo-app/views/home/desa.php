@@ -61,16 +61,16 @@
 </style>
 <div class="content-wrapper">
 	<section class='content-header'>
-		<h1>Tentang OpenSID</h1>
-		<ol class='breadcrumb'>
+		<h1>Dashboard</h1>
+<!-- 		<ol class='breadcrumb'>
 			<li><a href='<?=site_url()?>'><i class='fa fa-home'></i> Home</a></li>
 			<li class='active'>Tentang OpenSID</li>
-		</ol>
+		</ol> -->
 	</section>
 	<section class='content' id="maincontent">
 		<div class='row'>
 			<?php if (isset($update_available) && $update_available): ?>
-				<div class='col-md-12'>
+<!-- 				<div class='col-md-12'>
 					<div class="callout callout-success update">
 						<h4><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Update Tersedia!</h4>
 						<p align="justify">
@@ -104,13 +104,13 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			<?php endif; ?>
-			<div class='col-md-6'>
+			<div class='col-md-12'>
 				<div class='box box-info'>
 					<div class='box-body'>
 						<div class="row">
-							<div class="col-lg-6 col-xs-6">
+							<div class="col-lg-3 col-xs-6">
 								<div class="small-box bg-purple">
 									<div class="inner">
 										<?php foreach ($dusun as $data): ?>
@@ -124,7 +124,7 @@
 									<a href="<?=site_url('sid_core')?>" class="small-box-footer">Lihat Detail <i class="fa fa-arrow-circle-right"></i></a>
 								</div>
 							</div>
-							<div class="col-lg-6 col-xs-6">
+							<div class="col-lg-3 col-xs-6">
 								<div class="small-box bg-aqua">
 									<div class="inner">
 										<?php foreach ($penduduk as $data): ?>
@@ -138,7 +138,7 @@
 									<a href="<?=site_url('penduduk/clear')?>" class="small-box-footer">Lihat Detail <i class="fa fa-arrow-circle-right"></i></a>
 								</div>
 							</div>
-							<div class="col-lg-6 col-xs-6">
+							<div class="col-lg-3 col-xs-6">
 								<div class="small-box bg-green">
 									<div class="inner">
 										<?php foreach ($keluarga as $data): ?>
@@ -152,7 +152,7 @@
 									<a href="<?=site_url('keluarga/clear')?>" class="small-box-footer">Lihat Detail <i class="fa fa-arrow-circle-right"></i></a>
 								</div>
 							</div>
-							<div class="col-lg-6 col-xs-6">
+							<div class="col-lg-3 col-xs-6">
 								<div class="small-box bg-blue">
 									<div class="inner">
 										<h3><?=$jumlah_surat?></h3>
@@ -213,11 +213,11 @@
 					</div>
 				</div>
 			</div>
-			<div class='col-md-6'>
+<!-- 			<div class='col-md-6'>
 				<div class='box box-info'>
-					<?php $this->load->view('home/about.php');?>
+					<?php //$this->load->view('home/about.php');?>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 </div>

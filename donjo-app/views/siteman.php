@@ -78,16 +78,12 @@
 			<div class="inner-bg">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-4 col-sm-offset-4 form-box">
+						<div class="col-sm-5 col-sm-offset-3 form-box">
 							<div class="form-top">
 								<a href="<?=site_url(); ?>"><img src="<?=gambar_desa($header['logo']);?>" alt="<?=$header['nama_desa']?>" class="img-responsive" /></a>
-								<div class="login-footer-top"><h1><?=ucwords($this->setting->sebutan_desa)?> <?=$header['nama_desa']?></h1>
-									<h3>
-										<br /><?=$header['alamat_kantor']?><br />Kodepos <?=$header['kode_pos']?>
-										<br /><?=ucwords($this->setting->sebutan_kecamatan)?> <?=$header['nama_kecamatan']?><br /><?=ucwords($this->setting->sebutan_kabupaten)?> <?=$header['nama_kabupaten']?>
-									</h3>
+								<div class="login-footer-top" style="margin-top: 15px"><h1><?=ucwords($this->setting->sebutan_desa)?> <?=$header['nama_desa']?></h1>
 								</div>
-								<hr />
+								<hr style="margin-top:30px" />
 							</div>
 							<div class="form-bottom">
 								<form id="validasi" class="login-form" action="<?=site_url('siteman/auth')?>" method="post" >
@@ -102,8 +98,8 @@
 										<div class="form-group">
 											<input name="password" id="password" type="password" placeholder="Kata sandi" <?php jecho($this->session->siteman_wait, 1, "disabled") ?> value="" class="form-username form-control required">
 										</div>
-										<div class="form-group">
-											<input type="checkbox" id="checkbox" class="form-checkbox"> Tampilkan kata sandi
+										<div class="form-group text-left">
+											<input type="checkbox" id="checkbox" class="form-checkbox" style="margin-left: 10px"> Tampilkan kata sandi
 										</div>
 										<hr />
 										<button type="submit" class="btn">MASUK</button>
@@ -116,13 +112,11 @@
 											</div>
 										<?php elseif ($this->session->siteman == -2): ?>
 											<div class="error">
-												Redaksi belum boleh masuk, SID belum memiliki sambungan internet!
+												Redaksi belum boleh masuk, Sistem belum memiliki sambungan internet!
 											</div>
 										<?php endif; ?>
 									<?php endif; ?>
 								</form>
-								<hr/>
-								<div class="login-footer-bottom"><a href="https://github.com/OpenSID/OpenSID" target="_blank">OpenSID</a> <?= substr(AmbilVersi(), 0, 20)?></div>
 							</div>
 						</div>
 					</div>

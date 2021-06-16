@@ -48,7 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <aside class="main-sidebar">
 	<section class="sidebar">
-		<div class="user-panel">
+<!-- 		<div class="user-panel">
 			<div class="pull-left image">
 				<img src="<?= gambar_desa($desa['logo']); ?>" class="img-circle" alt="User Image">
 			</div>
@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?= ucwords(substr($seb_kab, 0, 3).". " . $nam_kab); ?>
 				<?php	endif; ?>
 			</div>
-		</div>
+		</div> -->
 		<ul class="sidebar-menu" data-widget="tree">
 			<li class="header">MENU UTAMA</li>
 
